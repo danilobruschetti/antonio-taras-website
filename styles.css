@@ -16,3 +16,78 @@
   font-size: 0.70rem;
 }
 
+
+/* Change request refinements */
+
+.treatment-category {
+  margin: 34px 0 18px;
+  max-width: 760px;
+}
+
+.treatment-category h3 {
+  margin-bottom: 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.9rem, 3vw, 2.9rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+}
+
+.treatment-category p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.olistic-category {
+  padding-top: 18px;
+  margin-top: 44px;
+  border-top: 1px solid var(--line);
+}
+
+.service-grid-four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.service-grid-four .service-card {
+  min-height: 340px;
+}
+
+@media (max-width: 1120px) {
+  .service-grid-four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .service-grid-four {
+    grid-template-columns: 1fr;
+  }
+
+  .treatment-category {
+    margin-top: 28px;
+  }
+
+  .olistic-category {
+    margin-top: 34px;
+  }
+}
+
+
+
+/* Final profile photo update */
+.about-image img {
+  object-position: center top;
+}
+
+@media (min-width: 761px) {
+  .about-image img {
+    aspect-ratio: 4 / 4.8;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-image img {
+    aspect-ratio: 4 / 4.4;
+    object-position: center 12%;
+  }
+}
