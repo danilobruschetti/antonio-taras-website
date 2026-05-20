@@ -91,3 +91,334 @@
     object-position: center 12%;
   }
 }
+
+
+/* Formation and credentials */
+
+.credentials-block {
+  margin: 30px 0 0;
+  padding-top: 26px;
+  border-top: 1px solid rgba(248, 239, 228, 0.18);
+}
+
+.credentials-block .eyebrow {
+  color: #d9aa7a;
+  margin-bottom: 16px;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.credential-card {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 15px;
+  align-items: start;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(248, 239, 228, 0.14);
+}
+
+.credential-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: var(--cream);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(248, 239, 228, 0.14);
+}
+
+.credential-icon svg {
+  width: 27px;
+  height: 27px;
+  fill: currentColor;
+  opacity: 0.9;
+}
+
+.credential-logo-text {
+  color: var(--cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.88rem;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.credential-card h3 {
+  margin: 0 0 6px;
+  color: var(--cream);
+  font-size: 0.98rem;
+  line-height: 1.24;
+  letter-spacing: -0.01em;
+}
+
+.credential-card p {
+  margin: 0 0 8px;
+  color: rgba(248, 239, 228, 0.74);
+  font-size: 0.92rem;
+}
+
+.credential-card small {
+  display: block;
+  color: #d9aa7a;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.credentials-note {
+  margin: 12px 0 0;
+  color: rgba(248, 239, 228, 0.58);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 760px) {
+  .credentials-block {
+    margin-top: 24px;
+    padding-top: 22px;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credential-card {
+    grid-template-columns: 52px minmax(0, 1fr);
+    padding: 16px;
+  }
+
+  .credential-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+  }
+
+  .credential-logo-text {
+    font-size: 0.78rem;
+  }
+}
+
+
+/* Credentials refinement with certificate previews */
+
+.credentials-block {
+  margin: 26px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid rgba(248, 239, 228, 0.16);
+}
+
+.credentials-block .eyebrow {
+  color: #d9aa7a;
+  margin-bottom: 14px;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.credential-card {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(248, 239, 228, 0.13);
+}
+
+.credential-thumb {
+  width: 74px;
+  height: 54px;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(248, 239, 228, 0.14);
+}
+
+.credential-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.9) contrast(0.98);
+  transition: transform 0.25s ease;
+}
+
+.credential-thumb:hover img {
+  transform: scale(1.05);
+}
+
+.credential-card h3 {
+  margin: 0 0 4px;
+  color: var(--cream);
+  font-size: 0.98rem;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+}
+
+.credential-card p {
+  margin: 0 0 6px;
+  color: rgba(248, 239, 228, 0.72);
+  font-size: 0.88rem;
+}
+
+.credential-card small {
+  display: block;
+  color: #d9aa7a;
+  font-size: 0.72rem;
+  line-height: 1.32;
+  font-weight: 750;
+}
+
+.credentials-note {
+  margin: 10px 0 0;
+  color: rgba(248, 239, 228, 0.56);
+  font-size: 0.80rem;
+}
+
+@media (max-width: 760px) {
+  .credentials-block {
+    margin-top: 22px;
+    padding-top: 20px;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credential-card {
+    grid-template-columns: 68px minmax(0, 1fr);
+    padding: 13px;
+  }
+
+  .credential-thumb {
+    width: 68px;
+    height: 50px;
+  }
+
+  .credential-card h3 {
+    font-size: 0.94rem;
+  }
+
+  .credential-card p {
+    font-size: 0.84rem;
+  }
+}
+
+
+/* Credentials no-physical-certificates refinement */
+
+.credentials-block {
+  margin: 24px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid rgba(248, 239, 228, 0.16);
+}
+
+.credentials-block .eyebrow {
+  color: #d9aa7a;
+  margin-bottom: 14px;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.credential-card {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(248, 239, 228, 0.13);
+}
+
+.credential-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  color: #d9aa7a;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(248, 239, 228, 0.13);
+}
+
+.credential-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  opacity: 0.92;
+}
+
+.credential-thumb {
+  display: none;
+}
+
+.credential-card h3 {
+  margin: 0 0 4px;
+  color: var(--cream);
+  font-size: 0.98rem;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+}
+
+.credential-card p {
+  margin: 0 0 6px;
+  color: rgba(248, 239, 228, 0.72);
+  font-size: 0.88rem;
+}
+
+.credential-card small {
+  display: block;
+  color: #d9aa7a;
+  font-size: 0.72rem;
+  line-height: 1.32;
+  font-weight: 750;
+}
+
+.credentials-note {
+  margin: 10px 0 0;
+  color: rgba(248, 239, 228, 0.56);
+  font-size: 0.80rem;
+}
+
+@media (max-width: 760px) {
+  .credentials-block {
+    margin-top: 22px;
+    padding-top: 20px;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credential-card {
+    grid-template-columns: 44px minmax(0, 1fr);
+    padding: 14px;
+  }
+
+  .credential-card h3 {
+    font-size: 0.94rem;
+  }
+
+  .credential-card p {
+    font-size: 0.84rem;
+  }
+}
