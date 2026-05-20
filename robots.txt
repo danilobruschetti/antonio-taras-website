@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://danilobruschetti.github.io/antonio-taras-website/sitemap.xml
