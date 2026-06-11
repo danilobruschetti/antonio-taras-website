@@ -8,4 +8,8 @@
     <loc>https://danilobruschetti.github.io/antonio-taras-website/privacy.html</loc>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://danilobruschetti.github.io/antonio-taras-website/cookie.html</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
